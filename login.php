@@ -35,7 +35,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])){
             if($row['user_name']=== $uname && $row['password']=== $pass){
                 $_SESSION['user_name'] = $row['user_name'];
                 $_SESSION['name'] = $row['name'];
-                $_SESSION['id'] = $row['id'];
+                $_SESSION['id'] = $row['user_id'];
                 header("Location: index.php");
                 exit();
             }else{
