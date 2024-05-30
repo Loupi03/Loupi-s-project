@@ -1,3 +1,5 @@
+<?php 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +13,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="fbi.css">
-    <link rel="icon" href="../Project/assets/images/Loupi.png" >
+    <link rel="icon" href="assets/images/Loupi.png" >
 </head>
 
 <body>
@@ -25,7 +27,10 @@
                             <li><a href="index.php" class="active">Home</a></li>
                             <li><a href="Our shop.php">Our Shop</a></li>
                             <li><a href="contact.php">Contact Us</a></li>
-                            <li><a href="Project(js)/index.php"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3"/><circle cx="12" cy="10" r="3"/><circle cx="12" cy="12" r="10"/></svg></a></li>
+                            <li><a href="index-login.php"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3"/><circle cx="12" cy="10" r="3"/><circle cx="12" cy="12" r="10"/></svg></a></li>
+                            <?php if (isset($_SESSION['user_name'])):?>
+                                <li><a href="logout.php" class="logout">Logout</a></li>
+                            <?php endif ?>
                             <li><a href="add to cart.php"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="20.5" r="1"/><circle cx="18" cy="20.5" r="1"/><path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"/></svg></a></li>
                         </ul>   
                         <a class='menu-trigger'>

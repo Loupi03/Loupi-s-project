@@ -1,3 +1,11 @@
+<?php 
+
+session_start();
+if (isset($_SESSION['id']) && isset($_SESSION['user_name'])){
+  echo "rr";
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
