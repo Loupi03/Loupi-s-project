@@ -8,9 +8,12 @@
 
   <title>LOUPI</title>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="contact.css">
-  <link rel="stylesheet" href="fbi.css">
+  
   <link rel="icon" href="../Project/assets/images/Loupi.png">
+    <style><?php include 'contact.css';
+                  include 'fbi.css';
+    ?>
+    </style>
 </head>
 
 <body>
@@ -58,7 +61,7 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-lg-12">
-                  <form id="contact-form" method="post">
+                  <form    action="https://formspree.io/f/xnqekggr" id="contact-form" method="post">
                     <div class="row">
                       <div class="col-lg-6">
                         <fieldset>
@@ -72,7 +75,7 @@
                       </div>
                       <div class="col-lg-6">
                         <fieldset>
-                          <input type="email" placeholder="Your E-mail..." required="">
+                          <input type="email" name="email" placeholder="Your E-mail..." required="">
                         </fieldset>
                       </div>
                       <div class="col-lg-6">
@@ -82,7 +85,7 @@
                       </div>
                       <div class="col-lg-12">
                         <fieldset>
-                          <textarea placeholder="Your Message"></textarea>
+                          <textarea placeholder="Your Message" name="message"></textarea>
                         </fieldset>
                       </div>
                       <div class="col-lg-12">
